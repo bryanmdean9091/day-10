@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="./js/java.js"></script>
+    <link rel="stylesheet" href="./css/styles.css">
+    <title>Day 10 Daily Challenge</title>
+</head>
+<body>
+
+    <div class="form-box show">
+        <form id="form">
+            <h1>Name:</h1>
+           <input onkeydown="handleEnter(event)" class="input"  type="text" autofocus = "autofocus"  placeholder="Name"
+           id="input1" value="" required>
+           <h1>Password:</h1>
+           <input onkeydown="handleEnter(event)" class="input"  type="password" placeholder="Password"
+           id="input2" value="" required>
+           <h1>Please re-enter your password:</h1>
+           <input onkeydown="changeState()" class="input"  type="password"  placeholder="Repeat Password"
+           id="input3" value="" required>
+           <div class="button">
+           <button id="submitBtn" class="submit " onclick="pW()" type="submit">Create Account</button>
+        </div>
+    </form>
+    </div>
+    
+</body>
+</html>
